@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#14211b"/><path d="M30 66 L45 42 L54 54 L60 46 L72 66 Z" fill="#9fd8a4"/></svg></template>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;background:#ffffff;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#14211b;text-decoration:none}
+a:hover{color:#2f7a3e}
+[data-rt-track]::-webkit-scrollbar{display:none}
+@keyframes rtTicker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes rtScroll{0%{transform:translateY(-100%)}100%{transform:translateY(200%)}}
+</style>
+</helmet>
+<div style="font-family:'Geist',sans-serif;color:#14211b;background:#ffffff;min-height:100vh">
+
+  <!-- Header -->
+  <div role="note" aria-label="Note: some group is claiming to represent Ridgeline HR and is claiming to be hiring individuals for our company. This is a scam and is NOT associated with us." style="position:fixed;top:0;left:0;right:0;z-index:60;height:30px;overflow:hidden;background:#c8432f;color:#ffffff;display:flex;align-items:center">
+    <div style="display:flex;width:max-content;animation:rtTicker 48s linear infinite" style-hover="animation-play-state:paused">
+      <span style="display:inline-flex;align-items:center;gap:12px;padding-right:56px;white-space:nowrap"><span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:999px;background:#ffffff;color:#c8432f;font-weight:800;font-size:11px;flex:none">!</span><span style="font-size:13px;font-weight:600;letter-spacing:0.01em">Note: some group is claiming to represent Ridgeline HR and is claiming to be hiring individuals for our company. This is a scam and is NOT associated with us.</span></span><span style="display:inline-flex;align-items:center;gap:12px;padding-right:56px;white-space:nowrap"><span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:999px;background:#ffffff;color:#c8432f;font-weight:800;font-size:11px;flex:none">!</span><span style="font-size:13px;font-weight:600;letter-spacing:0.01em">Note: some group is claiming to represent Ridgeline HR and is claiming to be hiring individuals for our company. This is a scam and is NOT associated with us.</span></span><span style="display:inline-flex;align-items:center;gap:12px;padding-right:56px;white-space:nowrap"><span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:999px;background:#ffffff;color:#c8432f;font-weight:800;font-size:11px;flex:none">!</span><span style="font-size:13px;font-weight:600;letter-spacing:0.01em">Note: some group is claiming to represent Ridgeline HR and is claiming to be hiring individuals for our company. This is a scam and is NOT associated with us.</span></span><span style="display:inline-flex;align-items:center;gap:12px;padding-right:56px;white-space:nowrap"><span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:999px;background:#ffffff;color:#c8432f;font-weight:800;font-size:11px;flex:none">!</span><span style="font-size:13px;font-weight:600;letter-spacing:0.01em">Note: some group is claiming to represent Ridgeline HR and is claiming to be hiring individuals for our company. This is a scam and is NOT associated with us.</span></span>
+    </div>
+  </div>
+  <header style="position:fixed;top:30px;left:0;right:0;z-index:50;padding:0 max(clamp(20px,4vw,64px), calc((100% - 1560px) / 2));height:84px;display:flex;align-items:center;justify-content:space-between;gap:24px;background:{{ headerBg }};border-bottom:1px solid {{ headerLine }};backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transition:background 0.35s ease, border-color 0.35s ease">
+    <a href="https://www.ridgelinetherapeutics.com" style="display:flex;align-items:center"><img src="assets/logo.png" alt="Ridgeline Therapeutics" style="height:40px;width:auto;display:block"></a>
+    <sc-if value="{{ isWide }}" hint-placeholder-val="{{ true }}">
+      <nav style="display:flex;align-items:center;gap:40px">
+        <a href="https://www.ridgelinetherapeutics.com/about-us" style="color:{{ navInk }};font-size:15px;font-weight:400;letter-spacing:-0.005em;transition:color 0.3s" style-hover="opacity:0.6">About Us</a>
+        <a href="https://www.ridgelinetherapeutics.com/science" style="color:{{ navInk }};font-size:15px;font-weight:400;letter-spacing:-0.005em;transition:color 0.3s" style-hover="opacity:0.6">Science</a>
+        <a href="https://www.ridgelinetherapeutics.com/pipeline" style="color:{{ navInk }};font-size:15px;font-weight:400;letter-spacing:-0.005em;transition:color 0.3s" style-hover="opacity:0.6">Pipeline</a>
+        <a href="https://www.ridgelinetherapeutics.com/news" style="color:{{ navInk }};font-size:15px;font-weight:400;letter-spacing:-0.005em;transition:color 0.3s" style-hover="opacity:0.6">News</a>
+      </nav>
+    </sc-if>
+    <div style="display:flex;align-items:center;gap:10px">
+      <a href="https://www.ridgelinetherapeutics.com/contact" style="display:inline-flex;align-items:center;gap:10px;height:44px;padding:0 20px;border-radius:999px;background:{{ ctaBg }};color:{{ ctaInk }};font-size:14px;font-weight:500;transition:background 0.3s, color 0.3s" style-hover="opacity:0.85">Contact
+        <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </a>
+      <sc-if value="{{ isNarrow }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ toggleMenu }}" aria-label="Menu" style="width:44px;height:44px;border-radius:999px;border:1px solid {{ navLine }};background:transparent;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer">
+          <span style="display:block;width:16px;height:1.5px;background:{{ navInk }}"></span>
+          <span style="display:block;width:16px;height:1.5px;background:{{ navInk }}"></span>
+        </button>
+      </sc-if>
+    </div>
+  </header>
+  <sc-if value="{{ showMobileMenu }}" hint-placeholder-val="{{ false }}">
+    <nav style="position:fixed;top:114px;left:0;right:0;z-index:49;background:#ffffff;border-bottom:1px solid #e4e6df;padding:12px max(clamp(20px,4vw,64px), calc((100% - 1560px) / 2)) 24px;display:flex;flex-direction:column">
+      <a href="https://www.ridgelinetherapeutics.com/about-us" style="font-size:22px;font-weight:300;padding:14px 0;border-bottom:1px solid #eceee8">About Us</a>
+      <a href="https://www.ridgelinetherapeutics.com/science" style="font-size:22px;font-weight:300;padding:14px 0;border-bottom:1px solid #eceee8">Science</a>
+      <a href="https://www.ridgelinetherapeutics.com/pipeline" style="font-size:22px;font-weight:300;padding:14px 0;border-bottom:1px solid #eceee8">Pipeline</a>
+      <a href="https://www.ridgelinetherapeutics.com/news" style="font-size:22px;font-weight:300;padding:14px 0">News</a>
+    </nav>
+  </sc-if>
+
+  <!-- 01 Hero -->
+  <section data-screen-label="01 Hero" style="position:relative;min-height:max(600px,100vh);display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background:#14211b">
+    <video src="https://video.wixstatic.com/video/02f678_4cd02fe555eb4712a4f54942fbe6dd98/1080p/mp4/file.mp4" poster="assets/hero-mountains.jpg" autoplay="" muted="" loop="" playsinline="" preload="auto" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(14,24,19,0.4) 0%, rgba(14,24,19,0.05) 28%, rgba(14,24,19,0.3) 55%, rgba(14,24,19,0.82) 100%)"></div>
+    <div style="position:relative;padding:0 max(clamp(20px,4vw,64px), calc((100% - 1560px) / 2)) clamp(32px,4.5vw,64px);display:flex;flex-direction:column;gap:clamp(28px,3.4vw,48px)">
+      <h1 data-reveal="" style="margin:0;max-width:1040px;font-weight:300;font-size:clamp(36px,4.6vw,74px);line-height:1.04;letter-spacing:-0.045em;color:#ffffff;text-wrap:balance">Revolutionizing healthcare through innovative biotechnology solutions.</h1>
+      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:28px;padding-top:clamp(24px,2.6vw,36px);border-top:1px solid rgba(255,255,255,0.22)">
+        <div data-reveal="" style="display:flex;flex-direction:column;gap:24px;max-width:500px">
+          <p style="margin:0;font-size:clamp(16px,1.2vw,18px);line-height:1.6;font-weight:300;color:rgba(255,255,255,0.9);text-wrap:pretty">Ridgeline Therapeutics is creating transformative once-daily oral drugs to treat numerous global chronic health problems including musculoskeletal disorders and metabolic diseases.</p>
+          <div style="display:flex">
+            <a href="https://www.ridgelinetherapeutics.com/about-us" style="display:inline-flex;align-items:center;gap:14px;height:52px;padding:0 8px 0 24px;border-radius:999px;background:#ffffff;color:#14211b;font-size:15px;font-weight:500" style-hover="background:#e6eadf;color:#14211b">About Us
+              <span style="width:36px;height:36px;border-radius:999px;background:#14211b;color:#ffffff;display:flex;align-items:center;justify-content:center"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+            </a>
+          </div>
+        </div>
+        <a data-reveal="" href="#science" style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.8);font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase">
+          <span style="position:relative;display:block;width:1px;height:44px;background:rgba(255,255,255,0.25);overflow:hidden">{{ scrollBar }}</span>Scroll
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 Science / Platform -->
+  <section id="science" data-screen-label="02 Science" style="padding:clamp(64px,8vw,120px) clamp(20px,4vw,64px)">
+    <div style="max-width:1560px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(40px,5vw,80px)">
+      <div style="display:flex;flex-direction:column;gap:clamp(40px,5vw,72px)">
+        <div style="display:flex;flex-direction:column;gap:28px">
+          <div data-reveal="" style="font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#5f6b62;display:flex;align-items:center;gap:12px">
+            <span style="width:8px;height:8px;border-radius:999px;background:#2f7a3e"></span>Our Science
+          </div>
+          <h2 data-reveal="" style="margin: 0; max-width: 1320px; font-weight: 300; font-size: clamp(34px,4.2vw,58px); line-height: 1.06; letter-spacing: -0.04em; text-wrap: balance">Cutting edge science around cellular metabolism and epigenetics anchors Ridgeline's <span style="color:#2f7a3e">innovative first-in-class drugs.</span></h2>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:16px">
+          <div data-reveal="" style="flex:1.25 1 520px;min-width:0;position:relative;border-radius:20px;overflow:hidden;min-height:clamp(280px,30vw,420px);background:#f3f4ef">
+            <img src="assets/lab-flask.jpg" alt="Scientist examining a flask in the lab" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%">
+          </div>
+          <div data-reveal="" style="flex:1 1 420px;min-width:0;display:flex;flex-direction:column;justify-content:flex-end;gap:32px;padding:clamp(28px,3vw,48px);border-radius:20px;background:#f3f4ef">
+            <p style="margin:0;font-size:clamp(17px,1.25vw,19px);line-height:1.65;color:#33403a;text-wrap:pretty">We are committed to leading the development of first-in-class, highly-selective, and potent small molecule inhibitors of nicotinamide N-methyltransferase (NNMT), a cytosolic enzyme highly expressed in select tissue (e.g., adipocytes, hepatocytes, muscle), where it plays a critical role in regulating energy metabolism and epigenetic pathways.</p>
+            <div style="display:flex">
+              <a href="https://www.ridgelinetherapeutics.com/science" style="display:inline-flex;align-items:center;gap:14px;height:54px;padding:0 10px 0 26px;border-radius:999px;background:#14211b;color:#ffffff;font-size:15px;font-weight:500" style-hover="background:#2f7a3e;color:#ffffff">Explore our science
+                <span style="width:36px;height:36px;border-radius:999px;background:#ffffff;color:#14211b;display:flex;align-items:center;justify-content:center"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,320px),1fr)); gap: 43px; flex-grow: 0">
+        <a data-reveal="" href="https://www.ridgelinetherapeutics.com/science" style="display:flex;flex-direction:column;gap:28px;padding:clamp(28px,2.6vw,40px);border-radius:20px;background:#f3f4ef;color:#14211b;transition:background 0.4s ease, transform 0.4s ease" style-hover="background:#e9ece3;color:#14211b;transform:translateY(-4px)">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding-bottom:20px;border-bottom:1px solid #dcdfd5;font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#5f6b62">
+            <span>01</span><span>Target</span>
+          </div>
+          <h3 style="margin:0;font-weight:300;font-size:clamp(26px,2.3vw,38px);letter-spacing:-0.04em;line-height:1.05">NNMT</h3>
+          <p style="margin:0;flex:1;font-size:16px;line-height:1.65;color:#4a564d;text-wrap:pretty">Substantial evidence supports enhanced NNMT expression and activity linking to a number of chronic diseases; high NNMT expression and activity in white adipose tissue, as observed in obesity, strongly triggers adiposity-induced insulin resistance and related metabolic syndrome (Type 2 Diabetes).</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding-top:20px;border-top:1px solid #dcdfd5">
+            <span style="font-size:14px;font-weight:500">Learn more</span>
+            <span style="width:40px;height:40px;border-radius:999px;background:#14211b;color:#ffffff;display:flex;align-items:center;justify-content:center"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+          </div>
+        </a>
+        <a data-reveal="" href="https://www.ridgelinetherapeutics.com/science" style="display:flex;flex-direction:column;gap:28px;padding:clamp(28px,2.6vw,40px);border-radius:20px;background:#f3f4ef;color:#14211b;transition:background 0.4s ease, transform 0.4s ease" style-hover="background:#e9ece3;color:#14211b;transform:translateY(-4px)">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding-bottom:20px;border-bottom:1px solid #dcdfd5;font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#5f6b62">
+            <span>02</span><span>Mechanism</span>
+          </div>
+          <h3 style="margin:0;font-weight:300;font-size:clamp(26px,2.3vw,38px);letter-spacing:-0.04em;line-height:1.05">Muscle &amp; NAD+</h3>
+          <p style="margin:0;flex:1;font-size:16px;line-height:1.65;color:#4a564d;text-wrap:pretty">Several skeletal muscle disorders including muscular dystrophies (e.g., Duchene Muscular Dystrophy) and age-related muscle degeneration (e.g., sarcopenia) are characterized by a surge in NNMT expression and subsequently reduced cellular NAD+ levels.</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding-top:20px;border-top:1px solid #dcdfd5">
+            <span style="font-size:14px;font-weight:500">Learn more</span>
+            <span style="width:40px;height:40px;border-radius:999px;background:#14211b;color:#ffffff;display:flex;align-items:center;justify-content:center"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+          </div>
+        </a>
+        <a data-reveal="" href="https://www.ridgelinetherapeutics.com/science" style="display:flex;flex-direction:column;gap:28px;padding:clamp(28px,2.6vw,40px);border-radius:20px;background:#14211b;color:#ffffff;transition:background 0.4s ease, transform 0.4s ease" style-hover="background:#1c2e25;color:#ffffff;transform:translateY(-4px)">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,0.14);font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.6)">
+            <span>03</span><span>Platform</span>
+          </div>
+          <h3 style="margin:0;font-weight:300;font-size:clamp(26px,2.3vw,38px);letter-spacing:-0.04em;line-height:1.05">Platform Technology</h3>
+          <p style="margin:0;flex:1;font-size:16px;line-height:1.65;color:rgba(255,255,255,0.78);text-wrap:pretty">We have developed a series of selective small molecule NNMT inhibitors with attractive drug-like properties, and are accelerating our efforts to transition our novel lead drug candidates through preclinical development and to Phase I trials.</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding-top:20px;border-top:1px solid rgba(255,255,255,0.14)">
+            <span style="font-size:14px;font-weight:500">Learn more</span>
+            <span style="width:40px;height:40px;border-radius:999px;background:#ffffff;color:#14211b;display:flex;align-items:center;justify-content:center"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 Image band -->
+  <section data-screen-label="03 Image band" style="padding:0 clamp(20px,4vw,64px)">
+    
+  </section>
+
+  <!-- 04 Pipeline -->
+  <section data-screen-label="04 Pipeline" style="padding: clamp(64px,8vw,120px) clamp(20px,4vw,64px); padding-top: 0px">
+    <div style="max-width:1560px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(48px,6vw,96px);align-items:start">
+      <div style="display:flex;flex-direction:column;gap:32px;position:sticky;top:140px">
+        <div data-reveal="" style="font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#5f6b62;display:flex;align-items:center;gap:12px">
+          <span style="width:8px;height:8px;border-radius:999px;background:#2f7a3e"></span>Pipeline
+        </div>
+        <h2 data-reveal="" style="margin:0;font-weight:300;font-size:clamp(28px,2.6vw,42px);line-height:1.14;letter-spacing:-0.035em;text-wrap:pretty">Ridgeline Therapeutics is creating transformative once-daily oral drugs to treat numerous global chronic health problems including musculoskeletal disorders and metabolic diseases.</h2>
+        <div data-reveal="" style="display:flex">
+          <a href="https://www.ridgelinetherapeutics.com/pipeline" style="display:inline-flex;align-items:center;gap:14px;height:54px;padding:0 10px 0 26px;border-radius:999px;border:1px solid #14211b;color:#14211b;font-size:15px;font-weight:500" style-hover="background:#14211b;color:#ffffff">Explore
+            <span style="width:36px;height:36px;border-radius:999px;background:#14211b;color:#ffffff;display:flex;align-items:center;justify-content:center"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+          </a>
+        </div>
+        <div data-reveal="" style="position:relative;margin-top:8px;border-radius:20px;overflow:hidden;aspect-ratio:5/3;max-width:560px;background:#f3f4ef">
+          <img src="assets/aging-woman.jpg" alt="Older woman outdoors in the sun" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%">
+        </div>
+      </div>
+      <div data-reveal="" style="display:flex;flex-direction:column;border-top:1px solid #d9dcd2">
+        <sc-for list="{{ indications }}" as="item" hint-placeholder-count="6">
+          <div style="border-bottom:1px solid #d9dcd2">
+            <button onClick="{{ item.toggle }}" style="width:100%;display:grid;grid-template-columns:clamp(32px,4vw,56px) minmax(0,1fr) 40px;align-items:center;gap:clamp(10px,1.4vw,16px);padding:clamp(18px,1.8vw,26px) 0;background:transparent;border:0;cursor:pointer;text-align:left;font-family:'Geist',sans-serif;color:#14211b">
+              <span style="font-family:'Geist Mono',monospace;font-size:13px;color:#5f6b62">{{ item.num }}</span>
+              <span style="font-weight:400;font-size:clamp(20px,1.8vw,28px);letter-spacing:-0.025em;line-height:1.15">{{ item.title }}</span>
+              <span style="width:40px;height:40px;border-radius:999px;border:1px solid #c9cdbf;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:300;background:{{ item.iconBg }};color:{{ item.iconInk }};transition:background 0.3s">{{ item.icon }}</span>
+            </button>
+            <sc-if value="{{ item.isOpen }}" hint-placeholder-val="{{ false }}">
+              <p style="margin:0;padding:0 clamp(0px,4vw,56px) 28px clamp(42px,5.4vw,72px);font-size:16px;line-height:1.65;color:#4a564d;text-wrap:pretty">{{ item.body }}</p>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 Company -->
+  <section data-screen-label="05 Company" style="padding:0 clamp(20px,4vw,64px)">
+    <div style="max-width:1560px;margin:0 auto;border-radius:20px;background:#f3f4ef;padding:clamp(20px,2vw,28px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:clamp(32px,5vw,80px);align-items:stretch">
+      <figure data-reveal="" style="margin:0;position:relative;border-radius:14px;overflow:hidden;min-height:clamp(300px,36vw,460px)">
+        <img src="assets/executive.jpg" alt="Ridgeline team member" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 48%">
+      </figure>
+      <div style="display:flex;flex-direction:column;justify-content:space-between;gap:48px;padding:clamp(12px,3vw,48px) clamp(8px,2vw,40px) clamp(12px,3vw,40px) 0">
+        <div data-reveal="" style="font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#5f6b62;display:flex;align-items:center;gap:12px">
+          <span style="width:8px;height:8px;border-radius:999px;background:#2f7a3e"></span>About Us
+        </div>
+        <div style="display:flex;flex-direction:column;gap:28px">
+          <h2 data-reveal="" style="margin: 0; font-weight: 300; font-size: clamp(28px,2.7vw,34px); line-height: 1.15; letter-spacing: -0.035em; text-wrap: pretty">We are a Houston-based biotech company developing safe and effective drugs that selectively target new mechanisms-of-action to reverse age-related muscle weakness (sarcopenia/frailty), Type 2 diabetes, obesity, muscular dystrophies, and kidney disease.</h2>
+          <p data-reveal="" style="margin:0;max-width:620px;font-size:17px;line-height:1.65;color:#4a564d;text-wrap:pretty">Ridgeline Therapeutics' Business Advisory Board is comprised of leading senior executives and early-stage investors with highly successful records at moving therapeutic biotech companies to clinical trials, IPOs, and/or exit deals.</p>
+        </div>
+        <div data-reveal="" style="display:flex">
+          <a href="https://www.ridgelinetherapeutics.com/about-us" style="display:inline-flex;align-items:center;gap:14px;height:54px;padding:0 10px 0 26px;border-radius:999px;background:#14211b;color:#ffffff;font-size:15px;font-weight:500" style-hover="background:#2f7a3e;color:#ffffff">Learn more about us
+            <span style="width:36px;height:36px;border-radius:999px;background:#ffffff;color:#14211b;display:flex;align-items:center;justify-content:center"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 News -->
+  <section data-screen-label="06 News" style="padding:clamp(64px,8vw,120px) 0;overflow:hidden">
+    <div style="max-width:1560px;margin:0 auto;padding:0 clamp(20px,4vw,64px);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
+      <div style="display:flex;flex-direction:column;gap:24px">
+        <div data-reveal="" style="font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#5f6b62;display:flex;align-items:center;gap:12px">
+          <span style="width:8px;height:8px;border-radius:999px;background:#2f7a3e"></span>News
+        </div>
+        <h2 data-reveal="" style="margin:0;font-weight:300;font-size:clamp(30px,3.4vw,52px);line-height:1.06;letter-spacing:-0.04em">View selected news and updates</h2>
+      </div>
+      <div data-reveal="" style="display:flex;align-items:center;gap:10px">
+        <a href="https://www.ridgelinetherapeutics.com/news" style="display:inline-flex;align-items:center;height:52px;padding:0 22px;border-radius:999px;border:1px solid #d9dcd2;font-size:15px;font-weight:500;margin-right:6px" style-hover="border-color:#14211b;color:#14211b">View all news</a>
+        <button onClick="{{ prevSlide }}" aria-label="Previous" style="width:52px;height:52px;border-radius:999px;border:1px solid #d9dcd2;background:#ffffff;color:#14211b;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:{{ prevOpacity }};transition:opacity 0.3s, background 0.3s" style-hover="background:#f3f4ef"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13 7H1M6 2L1 7l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <button onClick="{{ nextSlide }}" aria-label="Next" style="width:52px;height:52px;border-radius:999px;border:0;background:#14211b;color:#ffffff;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:{{ nextOpacity }};transition:opacity 0.3s, background 0.3s" style-hover="background:#2f7a3e"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+      </div>
+    </div>
+
+    <div ref="{{ trackRef }}" onScroll="{{ onTrackScroll }}" data-rt-track="" style="margin-top:clamp(32px,4vw,56px);display:flex;gap:clamp(14px,1.6vw,24px);overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:8px max(clamp(20px,4vw,64px), calc((100% - 1560px) / 2 + clamp(20px,4vw,64px))) 72px;scroll-padding:0 max(clamp(20px,4vw,64px), calc((100% - 1560px) / 2 + clamp(20px,4vw,64px)))">
+      <sc-for list="{{ news }}" as="n" hint-placeholder-count="4">
+        <a href="https://www.ridgelinetherapeutics.com/news" style="position:relative;flex:none;width:clamp(260px,25vw,380px);aspect-ratio:3/4;border-radius:32px;overflow:hidden;scroll-snap-align:start;background:#e9ece3;color:#ffffff;box-shadow:0 40px 70px -30px {{ n.glow }};transition:transform 0.5s cubic-bezier(.2,.7,.2,1)" style-hover="transform:translateY(-6px);color:#ffffff">
+          <img src="{{ n.img }}" alt="{{ n.alt }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{{ n.pos }}">
+          <div style="position:absolute;left:0;right:0;bottom:0;height:62%;backdrop-filter:blur(22px) saturate(1.2);-webkit-backdrop-filter:blur(22px) saturate(1.2);mask-image:linear-gradient(to top, #000 45%, transparent 100%);-webkit-mask-image:linear-gradient(to top, #000 45%, transparent 100%)"></div>
+          <div style="position:absolute;left:0;right:0;bottom:0;height:70%;background:linear-gradient(to top, rgba(12,20,16,0.72) 0%, rgba(12,20,16,0.35) 50%, rgba(12,20,16,0) 100%)"></div>
+          <div style="position:absolute;top:20px;left:0;right:0;display:flex;justify-content:center">
+            <span style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,0.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#14211b;font-size:13px;font-weight:500"><span style="width:6px;height:6px;border-radius:999px;background:#2f7a3e"></span>{{ n.date }}</span>
+          </div>
+          <div style="position:absolute;left:0;right:0;bottom:0;padding:24px;display:flex;flex-direction:column;gap:22px">
+            <h3 style="margin:0;font-weight:400;font-size:clamp(20px,1.6vw,24px);line-height:1.25;letter-spacing:-0.02em;color:#ffffff;text-wrap:pretty">{{ n.title }}</h3>
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+              <div style="display:flex;align-items:center;gap:10px;min-width:0">
+                <span style="width:38px;height:38px;border-radius:999px;background:#14211b;border:1.5px solid rgba(255,255,255,0.6);display:flex;align-items:center;justify-content:center;flex:none;overflow:hidden"><img src="assets/logo.png" alt="" style="width:30px;height:auto"></span>
+                <div style="display:flex;flex-direction:column;gap:2px;min-width:0">
+                  <span style="font-size:14px;font-weight:500;color:#ffffff">Ridgeline</span>
+                  <span style="font-size:12px;color:rgba(255,255,255,0.75)">{{ n.year }}</span>
+                </div>
+              </div>
+              <span style="display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 20px;border-radius:999px;background:#ffffff;color:#14211b;font-size:14px;font-weight:600;box-shadow:0 8px 20px rgba(0,0,0,0.18);white-space:nowrap">Read more <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+            </div>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+
+    <div style="max-width:1560px;margin:0 auto;padding:0 clamp(20px,4vw,64px);display:flex;align-items:center;gap:8px">
+      <sc-for list="{{ dots }}" as="d" hint-placeholder-count="4">
+        <button onClick="{{ d.go }}" aria-label="Go to slide" style="height:6px;width:{{ d.w }};border-radius:999px;border:0;padding:0;background:{{ d.bg }};cursor:pointer;transition:width 0.4s ease, background 0.4s ease"></button>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- 07 CTA + Footer -->
+  <footer data-screen-label="07 Footer" style="padding:0 clamp(12px,1.5vw,20px) clamp(12px,1.5vw,20px)">
+    <div style="position:relative;border-radius:24px;overflow:hidden;background:#14211b;color:#ffffff">
+      <div style="position:absolute;inset:0;opacity:0.35">
+        <img src="assets/hero-mountains.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%">
+      </div>
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(20,33,27,0.55) 0%, rgba(20,33,27,0.96) 70%)"></div>
+      <div style="position:relative;padding:clamp(56px,7vw,100px) clamp(20px,4vw,64px) 28px;max-width:1688px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(44px,6vw,84px)">
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:40px">
+          <h2 data-reveal="" style="margin:0;max-width:980px;font-weight:300;font-size:clamp(30px,3.6vw,58px);line-height:1.02;letter-spacing:-0.045em;text-wrap:balance">Interested in partnering with Ridgeline? <span style="color:#9fd8a4">Let’s talk.</span></h2>
+          <a data-reveal="" href="https://www.ridgelinetherapeutics.com/contact" style="display:inline-flex;align-items:center;gap:14px;height:58px;padding:0 10px 0 28px;border-radius:999px;background:#ffffff;color:#14211b;font-size:15px;font-weight:500" style-hover="background:#dfe9d9;color:#14211b">Contact
+            <span style="width:38px;height:38px;border-radius:999px;background:#14211b;color:#ffffff;display:flex;align-items:center;justify-content:center"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+          </a>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:40px;padding-top:48px;border-top:1px solid rgba(255,255,255,0.14)">
+          <div style="display:flex;flex-direction:column;gap:20px">
+            <img src="assets/logo.png" alt="Ridgeline Therapeutics" style="height:48px;width:auto;align-self:flex-start">
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:40px clamp(48px,8vw,140px)">
+          <div style="display:flex;flex-direction:column;gap:14px;min-width:140px">
+            <span style="font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5)">Navigate</span>
+            <a href="https://www.ridgelinetherapeutics.com" style="color:rgba(255,255,255,0.85);font-size:15px" style-hover="color:#9fd8a4">Home</a>
+            <a href="https://www.ridgelinetherapeutics.com/about-us" style="color:rgba(255,255,255,0.85);font-size:15px" style-hover="color:#9fd8a4">About Us</a>
+            <a href="https://www.ridgelinetherapeutics.com/science" style="color:rgba(255,255,255,0.85);font-size:15px" style-hover="color:#9fd8a4">Science</a>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:14px;min-width:140px">
+            <span aria-hidden="true" style="display:block;font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);visibility:hidden">Navigate</span>
+            <a href="https://www.ridgelinetherapeutics.com/pipeline" style="color:rgba(255,255,255,0.85);font-size:15px" style-hover="color:#9fd8a4">Pipeline</a>
+            <a href="https://www.ridgelinetherapeutics.com/news" style="color:rgba(255,255,255,0.85);font-size:15px" style-hover="color:#9fd8a4">News</a>
+            <a href="https://www.ridgelinetherapeutics.com/contact" style="color:rgba(255,255,255,0.85);font-size:15px" style-hover="color:#9fd8a4">Contact</a>
+          </div>
+          </div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:13px;color:rgba(255,255,255,0.55)">
+          <span>© 2025 by Ridgeline Therapeutics</span>
+          <a href="#top" onClick="{{ toTop }}" style="color:rgba(255,255,255,0.55);font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase" style-hover="color:#ffffff">Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;animations&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  trackRef = React.createRef();
+  state = { w: typeof window !== 'undefined' ? window.innerWidth : 1440, menu: false, scrolled: false, open: 0 };
+  componentDidMount() {
+    this.startVideo = () => document.querySelectorAll('video').forEach(v => { v.muted = true; v.defaultMuted = true; v.setAttribute('muted', ''); v.playsInline = true; const p = v.play(); if (p && p.catch) p.catch(() => {}); });
+    this.startVideo(); setTimeout(this.startVideo, 500);
+    document.addEventListener('click', this.startVideo, { once: true });
+    document.addEventListener('touchstart', this.startVideo, { once: true });
+    this.onResize = () => this.setState({ w: window.innerWidth });
+    this.onScroll = () => { const s = window.scrollY > 40; if (s !== this.state.scrolled) this.setState({ scrolled: s }); };
+    window.addEventListener('resize', this.onResize);
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    this.onScroll();
+    if ((this.props.animations ?? true) && 'IntersectionObserver' in window) {
+      setTimeout(() => {
+        const els = Array.from(document.querySelectorAll('[data-reveal]'));
+        this.io = new IntersectionObserver((entries) => {
+          entries.forEach(e => {
+            if (e.isIntersecting) {
+              e.target.style.opacity = '1';
+              e.target.style.transform = 'none';
+              this.io.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        els.forEach((el, i) => {
+          const r = el.getBoundingClientRect();
+          if (r.top < window.innerHeight * 0.95) return;
+          el.style.opacity = '0';
+          el.style.transform = 'translateY(28px)';
+          el.style.transition = 'opacity 0.9s cubic-bezier(.2,.7,.2,1), transform 0.9s cubic-bezier(.2,.7,.2,1)';
+          this.io.observe(el);
+        });
+      }, 300);
+    }
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('scroll', this.onScroll);
+    if (this.io) this.io.disconnect();
+  }
+  renderVals() {
+    const isWide = this.state.w >= 1000;
+    const solid = this.state.scrolled || this.state.menu;
+    const data = [
+      ['Muscle Weakness in Aging Adults', 'After about 35 years of age, muscle strength declines with age, typically at a rate of 1-1.5% per year for men and 0.5-2% per year for women. Several studies have shown that decreased muscle strength correlates with decreased mobility, increased mortality, and increased morbidity. Ridgeline\'s new therapeutic shows promise to maintain muscle strength during aging.'],
+      ['Obesity', 'Obesity is a poorly-controlled, global public health problem tied to many comorbidities. Current clinical best practices for first-line treatment are limited to diet modification (e.g., hypocaloric diet) and exercise, yet few individuals achieve their target weight loss through these means, let alone sustain it. We have a developed a drug that promotes rapid, robust, and persistent body weight and fat loss relative to diet switch alone.'],
+      ['Type 2 Diabetes', 'It\'s estimated that more than 460 million people worldwide have Type 2 Diabetes, and it\'s the ninth leading cause of death. Ridgeline Therapeutics has developed a unique approach to treat this ever-increasing diagnosis.'],
+      ['Muscle Atrophy', 'Limited muscle use is widespread in older adults (e.g., post-injury immobilization, bed rest) and often leads to disuse-induced muscular atrophy defined by substantial loss of muscle mass, strength, and function. Atrophy is associated with key changes to muscle proteins, and Ridgeline\'s treatment shows promise to reverse these changes.'],
+      ['Glioblastoma', 'Accounting for nearly 50% of all primary malignant brain tumors, this dangerous disease is notoriously aggressive. Average life expectancy post-diagnosis is often less than two years. Ridgeline\'s treatment targeting a key protein involved in metabolism aims to dramatically extend survival, and improve rates of remission.'],
+      ['Duchenne Muscular Dystrophy', 'Muscular dystrophies, like Duchenne\'s, are genetic conditions that result in muscle weakness and decreased mobility. Duchenne\'s in particular affects roughly 1 in every 3,500 male births worldwide. Ridgeline is developing small molecule therapeutics to help restore muscle strength and promote quality of life.'],
+    ];
+    const indications = data.map(([title, body], i) => {
+      const isOpen = this.state.open === i;
+      return {
+        num: String(i + 1).padStart(2, '0') + '.', title, body, isOpen,
+        icon: isOpen ? '–' : '+',
+        iconBg: isOpen ? '#14211b' : 'transparent',
+        iconInk: isOpen ? '#ffffff' : '#14211b',
+        toggle: () => this.setState(s => ({ open: s.open === i ? -1 : i })),
+      };
+    });
+    const news = [
+      { year: '2025', date: 'September 1, 2025', title: 'NIH NIA Phase 2 grant awarded to advance NNMT inhibitor drugs that preserve muscle during GLP-1 mediated weight loss.', img: 'assets/lab-scientist.jpg', alt: 'Scientist examining a specimen in a test tube', pos: '50% 30%', glow: 'rgba(120,140,160,0.55)' },
+      { year: '2025', date: 'September 29, 2025', title: 'Invited speaker at 9th Annual MASH Drug Development Summit (Boston, MA)', img: 'assets/executive.jpg', alt: 'Ridgeline team member', pos: '42% 45%', glow: 'rgba(170,140,80,0.5)' },
+      { year: '2025', date: 'April 16, 2025', title: 'NIH NIA review panel recommends funding of Ridgeline Phase 2 SBIR grant', img: 'assets/aging-woman.jpg', alt: 'Older woman outdoors in the sun', pos: '50% 20%', glow: 'rgba(40,90,150,0.55)' },
+      { year: '2025', date: 'March 14, 2025', title: 'DoD Notice of Award to fund development of NNMT inhibitors to prevent osteoarthritis and speed recovery following traumatic joint injury', img: 'assets/lab-flask.jpg', alt: 'Scientist examining a flask in the lab', pos: '62% 50%', glow: 'rgba(60,90,200,0.5)' },
+    ];
+    const step = () => { const t = this.trackRef.current; if (!t) return 0; const c = t.querySelector('a'); return c ? c.getBoundingClientRect().width + parseFloat(getComputedStyle(t).columnGap || 16) : 400; };
+    const goTo = (i) => { const t = this.trackRef.current; if (t) t.scrollTo({ left: i * step(), behavior: 'smooth' }); };
+    const idx = this.state.slide || 0;
+    const atEnd = this.state.slideEnd;
+    const dots = news.map((_, i) => ({ w: i === idx ? '36px' : '12px', bg: i === idx ? '#14211b' : '#d0d4c8', go: () => goTo(i) }));
+    return {
+      isWide, isNarrow: !isWide, showMobileMenu: !isWide && this.state.menu,
+      toggleMenu: () => this.setState(s => ({ menu: !s.menu })),
+      headerBg: solid ? 'rgba(255,255,255,0.86)' : 'rgba(255,255,255,0)',
+      headerLine: solid ? '#e4e6df' : 'rgba(255,255,255,0)',
+      navInk: solid ? '#14211b' : '#ffffff',
+      navLine: solid ? '#c9cdbf' : 'rgba(255,255,255,0.4)',
+      ctaBg: solid ? '#14211b' : '#ffffff',
+      ctaInk: solid ? '#ffffff' : '#14211b',
+      indications, news,
+      trackRef: this.trackRef, dots,
+      prevOpacity: idx === 0 ? 0.35 : 1, nextOpacity: atEnd ? 0.35 : 1,
+      prevSlide: () => goTo(Math.max(0, idx - 1)),
+      nextSlide: () => goTo(Math.min(news.length - 1, idx + 1)),
+      onTrackScroll: (e) => { const t = e.currentTarget; const s = step() || 1; const i = Math.round(t.scrollLeft / s); const end = t.scrollLeft + t.clientWidth >= t.scrollWidth - 8; if (i !== this.state.slide || end !== this.state.slideEnd) this.setState({ slide: i, slideEnd: end }); },
+      scrollBar: React.createElement('span', { style: { position: 'absolute', left: 0, top: 0, width: '1px', height: '50%', background: '#ffffff', animation: 'rtScroll 1.8s cubic-bezier(.6,0,.4,1) infinite' } }),
+      toTop: (e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); },
+    };
+  }
+}
+</script>
+</body>
+</html>
